@@ -1,4 +1,4 @@
-**Plant Watering Schedule**
+##Plant Watering Schedule##
 This is an application that takes in JSON data for plants. Using each plant's watering frequency a schedule is generated which excludes weekends (as we consider that as days off for the gardener!).
 Allowing the viewer to easily see which plants need to be watered on each day of the week.
 
