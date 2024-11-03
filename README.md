@@ -19,4 +19,4 @@ including their watering frequency (in days).
 • Each plant is watered based on its desired schedule, considering weekends.  
 
 ## Flowchart:
-![Simple flowchart](https://github.com/Harrman17/watering_schedule/blob/63c6add72e599427c3032fbca0704d74ed6c52fe/Watering%20Schedule.pdf)
+![flowchart](https://github.com/Harrman17/watering_schedule/blob/63c6add72e599427c3032fbca0704d74ed6c52fe/Watering%20Schedule.pdf)
