@@ -17,3 +17,6 @@ including their watering frequency (in days).
 • The schedule starts on next Monday and covers the following 12 weeks.  
 • No watering takes place on weekends (Saturdays and Sundays).  
 • Each plant is watered based on its desired schedule, considering weekends.  
+
+## Flowchart:
+![Simple flowchart](https://github.com/Harrman17/watering_schedule/blob/63c6add72e599427c3032fbca0704d74ed6c52fe/Watering%20Schedule.pdf)
