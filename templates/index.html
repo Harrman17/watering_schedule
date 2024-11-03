@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watering Schedule</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f8ff; color: #333; margin: 20px; }
+        h1 { text-align: center; color: #0056b3; }
+        .calendar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .day { background-color: #e7f0fe; border: 2px solid #b3d7ff; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: calc(17% - 10px); /* Five days per row */ }
+        .header { font-weight: bold; color: #333; text-decoration: underline; }
+        ul { padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>Watering Schedule</h1>
+    <div class="calendar">
+        {% for week in range(12) %}
+            {% for day in range(7) %}
+                {% set current_date = today + timedelta(weeks=week, days=day) %}
+                
+                {% if current_date.weekday() < 5 %}  {# Only show weekdays (Monday-Friday) #}
+                    <div class="day">
+                        <div class="header">{{ current_date.strftime('%A, %d/%m/%Y') }}</div>
+                        <ul>
+                            {% for plant in plants %}
+                                {% if current_date.strftime('%d-%m-%Y') in plant.get_schedule() %}
+                                    <li>{{ plant.get_name() }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+</body>
+</html>
