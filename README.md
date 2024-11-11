@@ -22,7 +22,7 @@ including their watering frequency (in days).
 ![flowchart](https://github.com/Harrman17/watering_schedule/blob/63c6add72e599427c3032fbca0704d74ed6c52fe/Watering%20Schedule.pdf)
 
 ## How to run:
-Once the project is cloned to your device please install the dependencies using by running the below in your teminal  
+Once the project is cloned to your device please install the dependencies by running the below in your teminal  
 1. pip install -r requirements.txt
 
 run the app  
