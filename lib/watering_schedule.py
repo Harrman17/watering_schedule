@@ -2,8 +2,6 @@ from datetime import datetime, timedelta
 from lib.plant import Plant
 import json
 
-
-    # next monday function
 class WateringSchedule():
     def __init__(self):
         pass
